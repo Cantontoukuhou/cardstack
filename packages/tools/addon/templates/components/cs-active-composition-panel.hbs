@@ -50,6 +50,7 @@
                   editorOptions=editorOptions
                   enabled=editingEnabled
                   permissions=fieldModelPermissions
+                  fetchPermissions=(perform fetchPermissionsFor content)
                   onchange=(action "validate")
                   errors=(get validationErrors fieldModel.name)
                 }}
