@@ -1,18 +1,21 @@
 .cs-editor-switch {
     position: absolute;
-    right: 14px;
-    top: 99px;
-    margin: 0;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    right: 15px;
+    margin: -1px -1px 0 0;
     padding: 0;
-    width: 3em;
-    height: 3em;
+    width: 145px;
+    height: 45px;
     background: var(--gradient-foreground);
     color: var(--bright-foreground);
     fill: var(--bright-foreground);
     border: none;
-    border-radius: 50%;
+    border-radius: 20px;
     box-shadow: 0 2px 15px 0 var(--dark50);
-    font-size: 16px;
+    font-size: 14px;
     cursor: pointer;
     z-index: 1;
 }
@@ -34,26 +37,7 @@
 .cs-editor-switch.enabled:focus {
     outline: none;
     background: black;
+    border-color: var(--active-foreground);
     color: var(--active-foreground);
     fill: var(--active-foreground);
-}
-
-.cs-editor-switch.disabled:hover::before {
-    position: absolute;
-    display: block;
-    clear: both;
-    content: 'Edit Page';
-    margin-left: -70px;
-    color: var(--light50);
-    font-size: 14px;
-}
-
-.cs-editor-switch.enabled:hover::before {
-    position: absolute;
-    display: block;
-    clear: both;
-    content: 'Done Editing';
-    margin-left: -90px;
-    color: var(--light50);
-    font-size: 14px;
 }

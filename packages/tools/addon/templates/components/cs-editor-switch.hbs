@@ -3,6 +3,12 @@
   {{action "toggleEditing"}}
   data-test-cs-editor-switch
 >
+  {{#if enabled}}
+    Done Editing
+  {{else}}
+    Edit Page
+  {{/if}}
+
   {{cs-svg
     (if enabled "done" "write")
     width="20px"
